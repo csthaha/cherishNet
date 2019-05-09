@@ -1,0 +1,51 @@
+/* miniprogram/pages/index/index.wxss */
+.container{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../../images/index.jpg) */
+}
+.main{
+    /* background-color: red; */
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 350px;
+}
+.text{
+    position: absolute;
+    top: 150px;
+    font-family: STXingkai ;
+    font-size: 26px;
+    color: red;
+}
+.start{
+    background-color: purple;
+    color: #ffffff;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.go{
+    
+    font-weight: bold;
+    color: purple;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go .go-to{
+    height: 8px;
+    width: 8px;
+    border-bottom: 1px solid purple;
+    border-right: 1px solid purple;
+    transform: rotate(-45deg);
+}
+.go .two{
+    opacity: 0.7;
+}
+.go .three{
+    opacity: 0.5;
+}
+.img{
+    width: 100%;
+}

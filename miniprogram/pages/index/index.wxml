@@ -1,0 +1,12 @@
+<!-- miniprogram/pages/index/index.wxml -->
+<view class="container">
+    <image class="img" mode="widthFix" src="../../images/index.jpg" />
+    <view class="text">开启真爱，趁现在</view>
+    <view class="main">
+        <button class="start" bindtap="open">开启缘分</button>
+        <view class="go" bindtap="go">
+            先逛逛吧<view class="go-to">
+            </view><view class="go-to two"></view><view class="go-to three"></view>
+        </view>
+    </view>
+</view>
