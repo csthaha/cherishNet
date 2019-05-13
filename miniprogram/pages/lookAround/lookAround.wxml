@@ -1,0 +1,44 @@
+<tabbar></tabbar>
+<view class="person">
+  <view bindtap="show" class='person-list'>
+    <view class='list'>
+      <image src='http://img4.imgtn.bdimg.com/it/u=2332938499,2686038565&fm=26&gp=0.jpg' class='pic'></image>
+      <view class='title'>
+        <text class='nickName'>Jessica</text>
+        <view >
+          <text class='age'>30</text>
+          <text class='pro'>会计</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view>
+
+<view class="person" wx:for="{{person}}" wx:key="{{item.id}}">
+  <view class='person-list' bindtap="show">
+    <view class='list' >
+      <image src='{{item.url}}' class='pic'></image>
+      <view class='title'>
+        <text class='nickName'>{{item.nickname}}</text>
+        <view >
+          <text class='age'>{{item.age}}</text>
+          <text class='pro'>{{item.professional}}</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view>
+<view class="person">
+  <view class='person-list' bindtap="show">
+    <view class='list'>
+      <image src='http://img0.imgtn.bdimg.com/it/u=161496332,3534679924&fm=26&gp=0.jpg' class='pic'></image>
+      <view class='title'>
+        <text class='nickName'>Jessica</text>
+        <view >
+          <text class='age'>30</text>
+          <text class='pro'>会计</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view>

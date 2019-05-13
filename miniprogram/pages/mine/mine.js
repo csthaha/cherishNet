@@ -1,4 +1,4 @@
-// miniprogram/pages/index/index.js
+// miniprogram/pages/mine/mine.js
 Page({
 
   /**
@@ -7,18 +7,7 @@ Page({
   data: {
 
   },
-  open(){
-    console.log('你已经开启啦')
-    wx.navigateTo({
-      url: '../complete/complete',
-    })
-  },
-  go: function(e){
-    console.log(e)
-    wx.navigateTo({
-      url: '../lookAround/lookAround',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

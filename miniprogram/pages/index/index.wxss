@@ -13,7 +13,7 @@
 }
 .text{
     position: absolute;
-    top: 150px;
+    top: 100px;
     font-family: STXingkai ;
     font-size: 26px;
     color: red;

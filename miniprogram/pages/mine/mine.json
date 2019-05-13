@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar": "../../components/tabbar/index"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

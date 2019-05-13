@@ -1,0 +1,18 @@
+<!--miniprogram/pages/complete/complete.wxml-->
+<view class='container'>
+  <view class='main'>
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=795134006,2710271818&fm=27&gp=0.jpg' class='pic1'></image>
+    <text class='title'>完善资料，为你匹配最合适的人</text>
+  </view>
+  <view>
+    <text class='ask'>请问你是一位帅哥，还是一位美女？</text>
+    <view>
+      <image src='http://img3.imgtn.bdimg.com/it/u=1761396174,2857729249&fm=26&gp=0.jpg' class='pic2'></image>
+      <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2115824388,1667774989&fm=26&gp=0.jpg' class='pic3'></image>
+    </view>
+  </view>
+  <view class='footer'>
+    <button class='btn'>下一步</button>
+    <text class='txt'>已有账号，立即登录</text><text class='arrow'></text>
+  </view>
+</view>

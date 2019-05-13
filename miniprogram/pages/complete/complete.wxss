@@ -1,0 +1,23 @@
+/* miniprogram/pages/complete/complete.wxss */
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  background-color: purple;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.txt {
+  color: purple;
+}
+
+.arrow {
+  height: 8px;
+  width: 8px;
+ 
+}

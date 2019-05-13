@@ -1,0 +1,17 @@
+<!--components/tabbar/index.wxml-->
+<view class='lookAround-tabbar'>
+  <view class='item-left {{status == 1 ? "active" : "" }}' bindtap='goTuijian' data-status='1'>
+    <icon type='tuijian' data-status="1"></icon>
+    <text>推荐</text>
+  </view>
+
+  <view class='item-center {{status == 2 ? "active" : "" }}' bindtap='goMessage' data-status='2'>
+    <icon type='xinxi'></icon>
+    <text class=' {{status == 2 ? "active" : "" }}'>消息</text>
+  </view>
+
+  <view class='item-right {{status == 3 ? "active" : "" }}' bindtap='goMine' data-status='3'>
+    <icon type='wode'></icon>
+    <text>我的</text>
+  </view>
+</view>
