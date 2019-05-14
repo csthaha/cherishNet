@@ -5,9 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    id:1
   },
-
+  show(e){
+    console.log(e.currentTarget.dataset.id);
+    this.setData({
+      id:e.currentTarget.dataset.id
+    })
+    console.log(this.data.id)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

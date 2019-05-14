@@ -1,8 +1,58 @@
 /* miniprogram/pages/complete/complete.wxss */
+/* 第一部分 */
+.container .pic1{
+  height: 300rpx;
+  margin-top: 20rpx;
+}
+.main{
+  position: relative;
+  height: 300rpx;
+  text-align: center
+}
+.container .title{
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+  color:#ffffff;
+  font-weight: bold;
+}
+.container .title1{
+  top:100rpx;
+}
+.container .title2{
+  top:180rpx;
+}
+/* 第二部分 */
+.mid{
+  margin-top: 50rpx;
+  
+}
+.mid .ask{
+  margin-left: 20rpx;
+}
+.mid .pic{
+  margin-top: 50rpx;
+  height: 300rpx;
+  width: 650rpx;
+  display: flex;
+}
+.pic .pic2,.pic3{
+  height: 100%;
+  width: 100%;
+  margin: 50rpx;
+}
 
+.pic .pic2.active,.pic3.active{
+  border: 1px solid purple;
+  box-shadow: 0 0 10px;
+}
+/* 下一步部分 */
 .footer {
   width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: 100rpx;
 }
 
 .btn {
@@ -10,14 +60,12 @@
   color: #fff;
   margin: 0 10px;
   border-radius: 5px;
+  margin-bottom: 20rpx;
 }
 
-.txt {
+.txt,.arrow {
   color: purple;
 }
 
-.arrow {
-  height: 8px;
-  width: 8px;
- 
-}
+
+
