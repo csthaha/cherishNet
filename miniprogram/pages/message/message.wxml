@@ -1,3 +1,14 @@
 <!--miniprogram/pages/message/message.wxml-->
-<text>miniprogram/pages/message/message.wxml</text>
 <tabbar></tabbar>
+<view class='container'>
+  <view class='header'>
+    
+    <view class='tile'>您还未登录，请登录后收获告白</view>
+    <image src='../../images/1.png'></image>
+  </view>
+  <view class='footer'>
+    <button class='btn' bindtap='next'>开始邂逅</button>
+    <text class='txt' bindtap='login'>已有账号，立即登录</text>
+    <text class='arrow'>></text>
+  </view>
+</view>

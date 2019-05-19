@@ -7,7 +7,18 @@ Page({
   data: {
 
   },
-
+  next(e){
+    console.log(e)
+    wx.redirectTo({
+      url: '/pages/complete/complete',
+    })
+  },
+  login:function(e){
+    console.log(e)
+    wx.redirectTo({
+      url: '/pages/login/login',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

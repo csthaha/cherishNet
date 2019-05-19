@@ -1,0 +1,26 @@
+/* miniprogram/pages/where/where.wxss */
+.header{
+  /* position: relative */
+  text-align: center
+}
+.where{
+  z-index: 99;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: bold;
+}
+
+.button{
+  position: absolute;
+  bottom: 60rpx;
+  width: 100%;
+}
+.button .btn{
+  color: #fff;
+  background-color: purple;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}

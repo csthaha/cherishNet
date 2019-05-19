@@ -17,3 +17,8 @@ button:focus{
 button::after{
   border: none;
 }
+
+page{
+  height: 100%;
+  width: 100%;
+}

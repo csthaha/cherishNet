@@ -8,8 +8,8 @@
   <view class='mid'>
     <text class='ask'>请问你是一位帅哥，还是一位美女？</text>
     <view class='pic'>
-      <image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2922358755,3950444589&fm=27&gp=0.jpg' class='pic2 {{id == 1 ? "active" : ""}}' data-id='1' bindtap='show'></image>
-      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1271692905,906195639&fm=26&gp=0.jpg' class='pic3 {{id == 2 ? "active" : ""}}' data-id='2' bindtap='show'></image>
+      <image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2922358755,3950444589&fm=27&gp=0.jpg' class='pic2 {{id == 1 ? "active" : ""}}' data-id='1' bindtap='show' data-gender='boy'></image>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1271692905,906195639&fm=26&gp=0.jpg' class='pic3 {{id == 2 ? "active" : ""}}' data-id='2' data-gender='girl' bindtap='show'></image>
     </view>
   </view>
   <view class='footer'>
