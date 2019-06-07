@@ -4,12 +4,12 @@
     <view class="phone">
       <image style="height:100rpx; width:100rpx; border-right:3px solid #eee" src="../../images/phone.png" />
       <input placeholder='请输入手机号码' bindinput='getPhoneValue' value='{{phone}}'/>
-    </view>
+    </view>  
     <view class="identify">
       <image  style="height:100rpx; width:130rpx; border-right:3px solid #eee; marign-top:50rpx; " src="../../images/yanzhengma.png" />
-      <input placeholder='请输入验证码' bindinput='getIdentifyValue' value='{{identify}}'/>
-      <button  class='btn1' bindtap='getIdentifyCode'>获取验证码</button>
+      <input placeholder='{{code}}' bindinput='getIdentifyValue' value='{{identify}}'/>
+      <button  class='btn1' bindtap='getIdentifyCode' disabled='{{disabled}}'>{{text}}</button>
     </view>
-    <button class='btn2'>登录</button>
+    <button class='btn2' bindtap='loginIn'>登录</button>
   </view>
 </view>

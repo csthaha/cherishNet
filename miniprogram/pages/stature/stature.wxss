@@ -1,0 +1,15 @@
+/* miniprogram/pages/stature/stature.wxss */
+.header{
+  /* position: relative */
+  text-align: center
+}
+.where{
+  z-index: 99;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: bold;
+}
+

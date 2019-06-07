@@ -1,0 +1,28 @@
+/* miniprogram/pages/marry/marry.wxss */
+.header{
+  /* position: relative */
+  text-align: center
+}
+.where{
+  z-index: 99;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: bold;
+}
+
+.edu{
+  border: 3rpx solid purple;
+  margin: 50rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  
+}
+.edu.active{
+  background-color: purple;
+  color: #fff;
+  box-shadow: 5rpx 10rpx 20rpx purple;
+}

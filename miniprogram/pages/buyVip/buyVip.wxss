@@ -1,0 +1,59 @@
+/* miniprogram/pages/buyVip/buyVip.wxss */
+image{
+  width: 100%;
+}
+.price{
+  display: flex;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #eee;
+  border-bottom: 1rpx solid #fff;
+  position: relative;
+}
+.month{
+  font-size: 50rpx;
+  /* font-weight: bold; */
+  margin: 0 20rpx;
+}
+.day{
+  font-size: 30rpx;
+  opacity: 0.7;
+}
+.all{
+  font-size: 50rpx;
+  /* font-weight: bold; */
+  position: absolute;
+  right: 100rpx;
+  margin-right: 20rpx;
+}
+.price image{
+  position: absolute;
+  right: 0;
+  top: 60rpx;
+  margin-right: 10rpx;
+}
+.all.active{
+  color: #ddc807;
+}
+.btn{
+  background-color: rgb(4, 190, 223);
+  margin: 10rpx 30rpx;
+  color: #fff;
+}
+.tq{
+  background-color: #eee;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #fff
+}
+.tq .title{
+  border-left: 3rpx solid #993399;
+  border-bottom: 1rpx solid #fff;
+  margin-left: 10rpx;
+  padding-left: 10rpx;
+}
+.tq .content{
+  margin-left: 20rpx;
+}
+.sm{
+  margin: 10rpx 0;
+}

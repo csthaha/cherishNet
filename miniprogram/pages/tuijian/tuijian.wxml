@@ -1,0 +1,28 @@
+<!-- <view wx:for="{{message}}">{{item.area}}</view> -->
+<view class='content'>
+  <view class='main'>
+    <image class='pic' src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2364321716,3202099899&fm=27&gp=0.jpg' mode="aspectFit"></image>
+    <view class='msg'>
+      <text class='msg-name'>冉冉</text>
+      <view class='msg-person'>
+        <view class='msg-xx'>21岁</view>
+        <view class='msg-xx'>重庆</view>
+        <view class='msg-xx'>165cm</view>
+      </view>
+      <view class='mind'>我正在寻找能给带给我快乐的那个人哈哈哈哈哈</view>
+    </view>
+  </view>
+
+  <view class='main' wx:for="{{message}}">
+    <image class='pic' src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2364321716,3202099899&fm=27&gp=0.jpg' mode="aspectFit"></image>
+    <view class='msg'>
+      <text class='msg-name'>冉冉</text>
+      <view class='msg-person'>
+        <view class='msg-xx'>{{year - item.year + 1}}岁</view>
+        <view class='msg-xx'>{{item.province}}</view>
+        <view class='msg-xx'>{{item.stature}}cm</view>
+      </view>
+      <view class='mind'>我的月薪为：{{item.money}},希望找个对象呀，帮你花钱的那种</view>
+    </view>
+  </view>
+</view>

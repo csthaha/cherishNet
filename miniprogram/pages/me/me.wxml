@@ -1,0 +1,34 @@
+<!-- miniprogram/pages/me/me.wxml -->
+<view class="userinfo" bindtap='navigateToPersonalDetail'>
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{img}}" mode="aspectFit"></image>
+  <view class='content'>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <view class="userinfo-nickname">{{userInfo.ID}}</view>
+  </view>
+</view>
+<view>
+  <van-cell title="基本条件" value="{{jbzl}}" is-link url="/pages/jbzl/jbzl" link-type="navigateTo" />
+  <van-cell title="择偶条件" value="{{zotj}}" is-link url="/pages/dashboard/index" link-type="navigateTo" />
+  <van-cell title="我的相册" value="已上传 {{n}} 张" is-link url="/pages/camera/camera" link-type="navigateTo" />
+  <van-cell title="内心独白" value="{{nxdb}}" is-link url="/pages/dubai/dubai" link-type="navigateTo" />
+</view>
+<view style="background-color:#fff; margin: 20rpx 0">
+  <view class="vip">
+    <image src="../../images/VIP.png" style="border:none; background-color:#fff; flex: 0 0 10% ; height: 100rpx;" mode="aspectFit" />
+    <view>珍心会员</view>
+    <view style="margin-left:auto;">未开通</view>
+  </view>
+  <view class="open">
+    <view class="text" style="">解锁消息发送，无限量免费查看，享有优先推荐特权</view>
+    <view style="margin-left:auto; display:flex">
+      <view style="margin: auto; background-color:green; border-radius:5rpx; padding:5rpx 10rpx; color:#fff;" bindtap='buy'>开通会员</view>
+    </view>
+  </view>
+</view>
+<view>
+  <van-cell title="更换手机" is-link url="/pages/dashboard/index" link-type="navigateTo" />
+  <van-cell title="修改密码" is-link url="/pages/dashboard/index" link-type="navigateTo" />
+</view>
+<view style="text-align:center;background-color:#fff;margin-top:20rpx; margin-bottom:50rpx; height:100rpx; line-height:100rpx;">
+  <view>退出登录</view>
+</view>

@@ -32,12 +32,75 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jbzl",
+					"pathName": "pages/jbzl/jbzl",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "dubai",
+					"pathName": "pages/dubai/dubai",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/complete/complete",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "xueli",
+					"pathName": "pages/education/education",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "status",
+					"pathName": "pages/stature/stature",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "edu",
+					"pathName": "pages/education/education",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "money",
+					"pathName": "pages/money/money",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "loginUp",
+					"pathName": "pages/loginUp/loginUp",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "loginIn",
+					"pathName": "pages/login/login",
+					"scene": null
 				}
 			]
 		}

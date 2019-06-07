@@ -1,0 +1,36 @@
+/* miniprogram/pages/me/me.wxss */
+.userinfo{
+    display: flex;
+   background-color: #993399;
+   height: 200rpx;
+   margin-bottom: 10rpx;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.vip{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee
+  
+}
+.open{
+  display: flex;
+  width: 100%;
+  /* height: 100rpx; */
+  /* line-height: 100rpx; */
+  justify-content: center;
+}
+.open .text{
+  width: 70%;
+}
+
+image{
+   flex: 0 0 20% ;
+    height: 150rpx;
+    border: 1rpx solid purple;
+    background-color: #eee;
+}

@@ -11,7 +11,20 @@ exports.main = async(event, context) => {
   return await db.collection('message').add({
     data: {
       sex: event.gender,
-      createTime: new Date()
+      createTime: new Date(),
+      province: event.province,
+      city: event.city,
+      area: event.area,
+      year: event.year,
+      month: event.month,
+      day: event.day,
+      stature: event.stature,
+      education: event.education,
+      marry: event.marry,
+      money: event.money,
+      phone: event.phone,
+      code: event.code
     }
   })
+  
 }

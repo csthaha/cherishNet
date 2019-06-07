@@ -1,0 +1,57 @@
+/* miniprogram/pages/tuijian/tuijian.wxss */
+
+Page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content .main {
+  height: 300rpx;
+  width: 95%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+
+.main .pic {
+  height: 100%;
+  width: 30%;
+  background-size: 100% 100%;
+  padding: 10rpx;
+}
+
+.main .msg {
+  width: 70%;
+  padding: 30rpx;
+}
+
+.main .msg .msg-person {
+  display: flex;
+}
+
+.main .msg .msg-person .msg-xx {
+  border: 1rpx solid #939;
+  margin-right: 10rpx;
+  color: #939;
+  height: 60rpx;
+  width: 150rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.main .msg .mind {
+  margin-top: 30rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

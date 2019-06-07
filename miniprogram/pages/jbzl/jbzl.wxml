@@ -1,0 +1,93 @@
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>昵称</view>
+  <view style='padding:0 30rpx;'>{{nc}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>性别</view>
+  <view style='padding:0 30rpx;'>{{sex}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>生日</view>
+  <view style='padding:0 30rpx;'>{{birth}} ></view>
+</view>
+
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>身高</view>
+  <view style='padding:0 30rpx;'>{{height}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>月收入</view>
+  <view style='padding:0 30rpx;'>{{money}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>工作地区</view>
+  <view style='padding:0 30rpx;'>{{where}} ></view>
+</view>
+
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>学历</view>
+  <view style='padding:0 30rpx;'>{{xl}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id=''>
+  <view style='padding:0 20rpx;'>婚姻状况</view>
+  <view style='padding:0 30rpx;'>{{marry}} ></view>
+</view>
+
+
+
+<view class="flex" bindtap='choose' data-id='7'>
+  <view style='padding:0 20rpx;'>体重</view>
+  <view style='padding:0 30rpx;'>{{tz}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id='6'>
+  <view style='padding:0 20rpx;'>体型</view>
+  <view style='padding:0 30rpx;'>{{tx}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id='5'>
+  <view style='padding:0 20rpx;'>是否吸烟</view>
+  <view style='padding:0 30rpx;'>{{cigerate}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id='4'>
+  <view style='padding:0 20rpx;'>是否喝酒</view>
+  <view style='padding:0 30rpx;'>{{drink}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id='4'>
+  <view style='padding:0 20rpx;'>是否喝酒</view>
+  <view style='padding:0 30rpx;'>{{drink}} ></view>
+</view>
+
+
+<view class="flex" bindtap='choose' data-id='3'>
+  <view style='padding:0 20rpx;'>星座</view>
+  <view style='padding:0 30rpx;'>{{xz}} ></view>
+</view>
+
+
+<view class="flex" bindtap='choose' data-id='2'>
+  <view style='padding:0 20rpx;'>民族</view>
+  <view style='padding:0 30rpx;'>{{nationality}} ></view>
+</view>
+
+<view class="flex" bindtap='choose' data-id='1'>
+  <view style='padding:0 20rpx;'>何时结婚</view>
+  <view style='padding:0 30rpx;'>{{marry}} ></view>
+</view>
+
+<view class='show' hidden="{{show}}">
+  <van-picker v-model="show" show-toolbar title="" columns="{{ columns }}" bind:cancel="onCancel" bind:confirm="onConfirm" />
+</view>
+
+<view class='btnf'>
+  <button class='btn'>保存</button>
+</view>

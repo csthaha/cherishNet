@@ -1,0 +1,43 @@
+/* miniprogram/pages/dubai/dubai.wxss */
+.section{
+  background-color: #eee;
+  width: 100%;
+ 
+}
+.num{
+  position: absolute;
+  right: 0;
+}
+
+.btn{
+  background-color: #993399;
+  margin:150rpx 30rpx;
+  color: #fff;
+}
+
+.story{
+  width: 100%;
+  margin-top: 30rpx;
+  height: 300rpx;
+ 
+  border: 3rpx solid #993399;
+  
+}
+.story .say{
+  height: 200rpx;
+  border-bottom: 1rpx solid #eee;
+   background-color: aqua;
+  padding-left: 20rpx;
+  
+}
+.story .fun{
+  display: flex;
+  background-color: #b6d7d8;
+}
+.fun image{
+  height: 100rpx;
+  border-right:3rpx solid purple;
+  flex: 1;
+  justify-content: center;
+  
+}

@@ -1,0 +1,31 @@
+/* miniprogram/pages/jbzl/jbzl.wxss */
+.flex{
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height:100rpx;
+  background-color: #fff;
+}
+.show{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  animation: show 2s ;
+  z-index: 99;
+}
+@keyframes show{
+  0%{
+    transform: translateY(-200rpx)
+  }
+  100%{
+    transform: translateY(-350rpx)
+  }
+}
+
+.btn{
+  
+  color: #fff;
+  margin: 20rpx;
+  background-color: #993399;
+}

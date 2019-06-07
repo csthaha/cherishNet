@@ -1,19 +1,69 @@
 {
   "pages": [
-    "pages/where/where",
-    "pages/complete/complete",
+    "pages/index/index",
+    "pages/tuijian/tuijian",
+    "pages/me/me",
+    "pages/loginUp/loginUp",
+    "pages/content/content",
+    "pages/buyVip/buyVip",
     "pages/login/login",
+    "pages/complete/complete",
+    "pages/stature/stature",
+    "pages/marry/marry",
+    "pages/money/money",
+    "pages/education/education",
+    "pages/birth/birth",
+    "pages/where/where",
     "pages/mine/mine",
     "pages/message/message",
-    "pages/index/index",
-    "pages/lookAround/lookAround"
+    "pages/lookAround/lookAround",
+    "pages/xinxi/xinxi",
+    "pages/jbzl/jbzl",
+    "pages/camera/camera",
+    "pages/dubai/dubai"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#cc00ff",
+    "backgroundColor": "#993399",
+    "backgroundTextStyle": "light",
     "navigationBarTitleText": "珍爱网",
+    "navigationBarBackgroundColor": "#993399",
     "navigationBarTextStyle": "black"
+  },
+  "cloud": true,
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tuijian/tuijian",
+        "text": "推荐",
+        "iconPath": "./images/tuijian.png",
+        "selectedIconPath": "./images/tuijian1.png",
+        "selectedColor": "purple"
+      },
+      {
+        "pagePath": "pages/xinxi/xinxi",
+        "text": "消息",
+        "iconPath": "./images/message.png",
+        "selectedIconPath": "./images/message1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/mine1.png"
+      }
+    ],
+    "selectedColor": "#993399"
+  },
+  "usingComponents": {
+    "van-button": "./pages/dist/button/index",
+    "van-icon": "./pages/dist/icon/index",
+    "van-dialog": "./pages/dist/dialog/index",
+    "van-field": "./pages/dist/field/index",
+    "van-notify": "./pages/dist/notify/index",
+    "van-card": "./pages/dist/card/index",
+    "van-cell": "./pages/dist/cell/index",
+    "van-cell-group": "./pages/dist/cell-group/index",
+    "van-picker": "./pages/dist/picker/index"
   },
   "sitemapLocation": "sitemap.json"
 }

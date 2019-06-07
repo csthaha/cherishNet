@@ -1,0 +1,23 @@
+/* miniprogram/pages/loginUp/loginUp.wxss */
+.phone,.lock{
+    display: flex;
+    margin-left: 30rpx;
+    margin-top: 50rpx;
+    border-bottom: 3px solid #eee;
+}
+.phone input,.lock input{
+    height: 100rpx;
+    margin-left: 20rpx;
+}
+image{
+    /*flex-grow flex-shink width: */
+    flex: 0 0 10% ;
+    height: 100rpx;
+    border-right:  3px solid #eee;
+  }
+.btn{
+    margin-top: 50rpx;
+    background-color: purple;
+    color: #ffffff;
+    margin: 50rpx 20rpx 0rpx;
+}

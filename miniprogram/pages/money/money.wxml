@@ -1,0 +1,15 @@
+<!--miniprogram/pages/money/money.wxml-->
+<view class='header'>
+  <image src='../../images/where.jpg' style='height:250rpx '></image>
+  <text class='where'>你的月收入？</text>
+</view>
+
+<view style='background:#eee; margin:20rpx; height:1000rpx; padding-top:5rpx'>
+  <view class='edu {{id == 1 ? "active" : ""}}' data-id='1' data-money="3000元以下" bindtap='choose'>3000 元以下</view>
+  <view class='edu {{id == 2 ? "active" : ""}}' data-id='2' data-money="3001-5000" bindtap='choose'>3001-5000元</view>
+  <view class='edu {{id == 3 ? "active" : ""}}' data-id='3' data-money="5001-8000" bindtap='choose'>5001-8000元</view>
+  <view class='edu {{id == 4 ? "active" : ""}}' data-id='4' data-money="8001-12000" bindtap='choose'>8001-12000元</view>
+  <view class='edu {{id == 5 ? "active" : ""}}' data-id='5' data-money="12001-20000" bindtap='choose'>12001-20000元</view>
+  <view class='edu {{id == 6 ? "active" : ""}}' data-id='6' data-money="20001-50000" bindtap='choose'>20001-50000元</view>
+  <view class='edu {{id == 7 ? "active" : ""}}' data-id='7' data-money="50000元以上" bindtap='choose'>50000元以上</view>
+</view>

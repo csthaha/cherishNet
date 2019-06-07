@@ -6,43 +6,55 @@ Page({
    */
   data: {
     id: 1,
-    gender:''
+    gender: '',
+    userId: ''
   },
   show(e) {
     console.log(e.currentTarget.dataset.id);
     this.setData({
       id: e.currentTarget.dataset.id,
-      gender:e.currentTarget.dataset.gender
+      gender: e.currentTarget.dataset.gender
     })
     console.log(this.data.gender)
   },
   next(e) {
     let self = this
+
     console.log(e)
-    wx.cloud.callFunction({
-      name: 'message',
-      data: {
-        gender:self.data.gender
-      },
-      
-      success(res){
-        console.log(res)
-      },
-      fail(err){
-        console.log(err)
-      }
-      
-    })
+    // wx.cloud.callFunction({
+    //   name: 'message',
+    //   data: {
+    //     gender: self.data.gender
+    //   },
+
+    //   success(res) {
+    //     console.log(res)
+    //     console.log(res.result._id)
+    //     self.setData({
+    //       userId:res.result._id
+    //     })
+    //     setTimeout(function() {
+    //       wx.navigateTo({
+    //         url: '/pages/where/where?userId=' + self.data.userId + "&gender=" + self.data.gender,
+    //       })
+    //       wx.hideLoading()
+    //     }, 1000)
+    //   },
+    //   fail(err) {
+    //     console.log(err)
+    //   }
+
+    // })
+    setTimeout(function() {
+      wx.navigateTo({
+        url: '/pages/where/where?userId=' + self.data.userId + "&gender=" + self.data.gender,
+      })
+      wx.hideLoading()
+    }, 1000)
     console.log(self.data.gender)
     wx.showLoading({
       title: '加载中',
     })
-    setTimeout(function(){
-      wx.navigateTo({
-        url: '/pages/where/where',
-      })
-      wx.hideLoading()
-    },1000)
   },
   login() {
     wx.navigateTo({
@@ -53,7 +65,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+   
   },
 
   /**

@@ -1,130 +1,176 @@
-// miniprogram/pages/where/where.js
-// const date = new Date()
-const provinces = ['北京', '上海', '广东', '天津', '重庆', '安徽', '福建', '甘肃', '广西', '贵州', '海南', '河北', '河南', '黑龙江', '湖北', '湖南', '吉林', '江苏', '江西', '辽宁', '内蒙古', '宁夏', '青海', '山东', '山西', '陕西', '四川', '西藏', '新疆', '云南', '浙江']
+const app = getApp();
 
+var address = require('../../lib/city.js');
 
-
-console.log(provinces[0])
-var citys = ['朝阳区', '海定区', '丰台区','昌平区','通州区','大兴区','西城区','房山区','顺义区','东城区','石景山区','怀柔区','门头沟区','密云区','延庆区','平台区']
-// const citys = ['朝阳区']
-const countys = ['灰埠镇']
-const where = [
-
-]
-
-// for (let i = 1990; i <= date.getFullYear(); i++) {
-//   years.push(i)
-// }
-
-// for (let i = 1; i <= 12; i++) {
-//   months.push(i)
-// }
-
-// for (let i = 1; i <= 31; i++) {
-//   days.push(i)
-// }
 Page({
-
   /**
    * 页面的初始数据
+   * provinces:所有省份 
+   * citys选择省对应的所有市,
+   * areas选择市对应的所有区
+   * provinces：当前被选中的省
+   * city当前被选中的市
+   * areas当前被选中的区
    */
   data: {
-    // years,
-    // year: date.getFullYear(),
-    // months,
-    // month: 2,
-    // days,
-    // day: 2,
-    // value: [9999, 1, 1],
-    provinces,
-    province: '北京',
-    citys,
-    city: '朝阳区',
-    countys,
-    county: '灰埠镇'
-
+    animationAddressMenu: {},
+    addressMenuIsShow: false,
+    value: [0, 0, 0],
+    provinces: [],
+    citys: [],
+    areas: [],
+    province: '',
+    city: '',
+    area: '',
+    userId: '',
+    gender:'',
+    ms:[]
   },
 
-  bindChange(e) {
+  next(e) {
+    // console.log(e)
     let self = this
-    const val = e.detail.value
-    console.log(val[0])
-    if (this.data.province == '北京'){
-      this.setData({citys})
-    }
-    else if (this.data.province == '上海') {
-      this.setData({
-        citys:['中国', '很好']
-      })
-      
-    }
-    else if (this.data.province == '天津'){
-      citys = ['hh', 'dm']
-    }
-    this.setData({
-      // year: this.data.years[val[0]],
-      // month: this.data.months[val[1]],
-      // day: this.data.days[val[2]]
-      province: this.data.provinces[val[0]],
-      citys:citys,
-      city: this.data.citys[val[1]],
-      county: this.data.countys[val[2]]
+    wx.showLoading({
+      title: '加载中',
+    })
+    
 
+    const db = wx.cloud.database()
+    
+
+
+    // wx.cloud.callFunction({
+    //   name: 'where',
+
+    //   data: {
+    //     province: self.data.province,
+    //     city: self.data.city,
+    //     area: self.data.area
+    //   },
+    //   success(res) {
+    //     console.log(res)
+
+    //   },
+    //   fail(err) {
+    //     console.log(err)
+    //   }
+    // })
+
+    setTimeout(function () {
+      wx.navigateTo({
+        url: '/pages/birth/birth?userId=' + self.data.userId + "&gender=" + self.data.gender + "&province=" + self.data.province + "&city=" + self.data.city + "&area=" + self.data.area,
+      })
+      wx.hideLoading();
+    }, 1500)
+    console.log(self.data.province)
+    console.log(self.data.userId,'+++++++')
+  },
+
+  onLoad: function (options) {
+    console.log(options)
+    this.setData({
+      userId: options.userId,
+      gender: options.gender
+    })
+    console.log(this.data.userId,'--------')
+    console.log(this.data.gender,'~~~~~~~~')
+    // 初始化动画变量
+    var animation = wx.createAnimation({
+      duration: 500,
+      transformOrigin: "50% 50%",
+      timingFunction: 'ease',
+    })
+    this.animation = animation;
+    // 默认联动显示浙江省
+    var id = address.provinces[10].id
+    this.setData({
+      provinces: address.provinces,
+      citys: address.citys[id],
+      areas: address.areas[address.citys[id][0].id],
+    })
+    // 巨坑 10表示选中浙江省
+    this.setData({
+      value: [10, 0, 0]
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
 
+  // 点击所在地区弹出选择框
+  selectDistrict: function (e) {
+    var that = this
+    if (that.data.addressMenuIsShow) {
+      return
+    }
+    that.startAddressAnimation(true)
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
+  // 执行动画
+  startAddressAnimation: function (isShow) {
+    var that = this
+    if (isShow) {
+      that.animation.translateY(0 + 'vh').step()
+    } else {
+      that.animation.translateY(40 + 'vh').step()
+    }
+    console.log(that.animation.export())
+    that.setData({
+      animationAddressMenu: that.animation.export(),
+      addressMenuIsShow: isShow,
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
+  // 点击地区选择取消按钮
+  cityCancel: function (e) {
+    this.startAddressAnimation(false)
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
+  // 点击地区选择确定按钮
+  citySure: function (e) {
+    var that = this
+    var city = that.data.city
+    var value = that.data.value
+    that.startAddressAnimation(false)
+    // 将选择的城市信息显示到输入框
+    var areaInfo = that.data.provinces[value[0]].name + ',' + that.data.citys[value[1]].name + ',' + that.data.areas[value[2]].name
+    var province = that.data.provinces[value[0]].name;
+    var city = that.data.citys[value[1]].name;
+    var area = that.data.areas[value[2]].name;
+    that.setData({
+      areaInfo: areaInfo,
+      province: province,
+      city: city,
+      area: area
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
+  // 处理省市县联动逻辑
+  cityChange: function (e) {
+    console.log(e)
+    var value = e.detail.value
+    var provinces = this.data.provinces
+    var citys = this.data.citys
+    var areas = this.data.areas
+    var provinceNum = value[0]
+    var cityNum = value[1]
+    var countyNum = value[2]
+    if (this.data.value[0] != provinceNum) {
+      var id = provinces[provinceNum].id
+      this.setData({
+        value: [provinceNum, 0, 0],
+        citys: address.citys[id],
+        areas: address.areas[address.citys[id][0].id],
+      })
+    } else if (this.data.value[1] != cityNum) {
+      var id = citys[cityNum].id
+      this.setData({
+        value: [provinceNum, cityNum, 0],
+        areas: address.areas[citys[cityNum].id],
+      })
+    } else {
+      this.setData({
+        value: [provinceNum, cityNum, countyNum]
+      })
+    }
+    console.log(this.data)
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
-  }
 })

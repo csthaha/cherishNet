@@ -1,0 +1,18 @@
+<!-- miniprogram/pages/loginUp/loginUp.wxml -->
+<view class="phone">
+    <image src="../../images/phone2.png" mode='aspectFit' />
+    <input bindinput='getPhone' placeholder="请输入手机号" />
+</view>
+<view class="lock">
+    <image src="../../images/lock.png" mode='aspectFit' />
+    <input bindinput='getCode' placeholder="设置登录密码(6-20位)" />
+</view>
+<button class="btn" bindtap='loginUp'>确定</button>
+<view style="text-align:center; margin-top:20rpx;">
+    <view>
+        已阅读并同意珍爱网的
+        <text style="color:purple">服务协议</text>
+        和
+        <text style="color:purple">隐私政策</text>
+    </view>
+</view>

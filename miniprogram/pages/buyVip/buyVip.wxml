@@ -1,0 +1,49 @@
+<!--miniprogram/pages/buyVip/buyVip.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image style='height:250rpx' src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='price' bindtap='select' data-id='1'>
+  <view class='month'>12个月</view>
+  <view class='day'>日均1.06元</view>
+  <view class='all {{id==1 ? "active": ""}}'>￥388</view>
+  <image src='/images/{{id == 1 ? images[1] : images[0]}}' mode='aspectFit' style='height:80rpx; width:80rpx'></image>
+</view>
+<view class='price' bindtap='select' data-id='2'>
+  <view class='month'>3个月</view>
+  <view class='day'>日均3.8元</view>
+  <view class='all {{id==2 ? "active": ""}}'>￥348</view>
+  <image src='/images/{{id == 2 ? images[1] : images[0]}}' mode='aspectFit' style='height:80rpx; width:80rpx'></image>
+</view>
+<view class='price' bindtap='select' data-id='3'>
+  <view class='month'>1个月</view>
+  <view class='day'>日均8.2元</view>
+  <view class='all {{id==3 ? "active": ""}}'>￥248</view>
+  <image src='/images/{{id == 3 ? images[1] : images[0]}}' mode='aspectFit' style='height:80rpx; width:80rpx'></image>
+</view>
+<button class='btn'>确认购买</button>
+
+<view class='tq'>
+  <view class='title'>特权说明</view>
+  <view class='content'>
+    <view class='sm'>1.解锁你的收件箱</view>
+    <view class='sm'>2.解锁消息</view>
+    <view class='sm'>3.尊贵vip勋章更醒目</view>
+    <view class='sm'>4.提升更换头像上限，无限制上传照片</view>
+  </view>
+</view>
+
+<view class='tq'>
+  <view class='title'>安全征婚说明</view>
+  <view class='content'>
+    <view class='sm'>在以下情况下请不要轻易透露您的联系方式（如：电话，手机号码，邮箱，即使同信，通信地址等</view>
+    <view class='sm'>1.在未充分了解对方前，请不要轻易透露您的联系方式</view>
+    <view class='sm'>2.当对方无相片或资料填写不完整时，请不要轻易透露您的联系方式</view>
+    <view class='sm'>3.相亲过程中，如遇对方提及借款，投资或所要礼物等行为，请务必提高警惕，谨防受骗，并及时举报。</view>
+   
+  </view>
+</view>

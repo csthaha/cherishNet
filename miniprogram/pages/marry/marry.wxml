@@ -1,0 +1,13 @@
+<!--miniprogram/pages/marry/marry.wxml-->
+
+<view class='header'>
+  <image src='../../images/where.jpg' style='height:250rpx '></image>
+  <text class='where'>你的婚姻状况？</text>
+</view>
+
+<view style='background:#eee; margin:20rpx; height:850rpx; padding-top:5rpx'>
+  <view class='edu {{id == 1 ? "active" : ""}}' data-id='1' data-marry="未婚" bindtap='choose'>未婚</view>
+  <view class='edu {{id == 2 ? "active" : ""}}' data-id='2' data-marry="离异" bindtap='choose'>离异</view>
+  <view class='edu {{id == 3 ? "active" : ""}}' data-id='3' data-marry="丧偶" bindtap='choose'>丧偶</view>
+
+</view>

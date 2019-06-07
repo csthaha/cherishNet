@@ -1,0 +1,17 @@
+<view class="section">
+  <textarea bindinput='inputValue' class='input' disabled="{{disabled}}" placeholder="说出你的故事..." auto-focus="{{focus}}" maxlength='{{length}}'/>
+  <view class='num'>{{number}}/{{length}}</view>
+</view>
+
+<button class='btn' bindtap='save'>保存</button>
+
+
+<view  class='story' wx:for="{{dubai}}" wx:key="key" wx:for-index="id" >
+  <view class='say'>{{item.dubai}}</view>
+  <!-- <view class='fun'>
+    <image  mode="aspectFit" src='/images/zhuanfa.png'></image>
+    <image bindtap='good' mode="aspectFit" src='/images/{{img}}' data-id='{{id}}'></image>
+    <image mode="aspectFit" src='/images/pinglun.png'></image>
+  </view> -->
+</view>
+

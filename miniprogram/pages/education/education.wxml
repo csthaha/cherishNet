@@ -1,0 +1,14 @@
+<!--miniprogram/pages/education/education.wxml-->
+<view class='header'>
+  <image src='../../images/where.jpg' style='height:250rpx '></image>
+  <text class='where'>你的学历是？</text>
+</view>
+
+<view style='background:#eee; margin:20rpx; height:850rpx; padding-top:5rpx'>
+  <view class='edu {{id == 1 ? "active" : ""}}' data-id='1' data-edu='高中及以下' bindtap='choose' >高中及以下</view>
+  <view class='edu {{id == 2 ? "active" : ""}}' data-id='2' data-edu='中专'bindtap='choose' >中专</view>
+  <view class='edu {{id == 3 ? "active" : ""}}' data-id='3' data-edu='大专'bindtap='choose' >大专</view>
+  <view class='edu {{id == 4 ? "active" : ""}}' data-id='4' data-edu='大学本科'bindtap='choose' >大学本科</view>
+  <view class='edu {{id == 5 ? "active" : ""}}' data-id='5' data-edu='硕士'bindtap='choose' >硕士</view>
+  <view class='edu {{id == 6 ? "active" : ""}}' data-id='6' data-edu='博士'bindtap='choose' >博士</view>
+</view>
