@@ -1,15 +1,11 @@
 <!--miniprogram/pages/login/login.wxml-->
-<view class='container'>
-  <view class="main">
-    <view class="phone">
-      <image style="height:100rpx; width:100rpx; border-right:3px solid #eee" src="../../images/phone.png" />
-      <input placeholder='请输入手机号码' bindinput='getPhoneValue' value='{{phone}}'/>
-    </view>  
-    <view class="identify">
-      <image  style="height:100rpx; width:130rpx; border-right:3px solid #eee; marign-top:50rpx; " src="../../images/yanzhengma.png" />
-      <input placeholder='{{code}}' bindinput='getIdentifyValue' value='{{identify}}'/>
-      <button  class='btn1' bindtap='getIdentifyCode' disabled='{{disabled}}'>{{text}}</button>
-    </view>
-    <button class='btn2' bindtap='loginIn'>登录</button>
-  </view>
+<view class="phone">
+  <image src="../../images/phone.png" mode='aspectFit' />
+  <input placeholder='请输入手机号码' bindinput='getPhoneValue' value='{{phone}}' />
 </view>
+<view class="lock">
+  <image src="../../images/yanzhengma.png" mode='aspectFit' />
+  <input placeholder='{{code}}' bindinput='getIdentifyValue' value='{{identify}}' />
+  <button class='btn1' bindtap='getIdentifyCode' disabled='{{disabled}}'>{{text}}</button>
+</view>
+<button class="btn" bindtap='loginIn'>登录</button>

@@ -36,26 +36,7 @@ Page({
     
 
     const db = wx.cloud.database()
-    
-
-
-    // wx.cloud.callFunction({
-    //   name: 'where',
-
-    //   data: {
-    //     province: self.data.province,
-    //     city: self.data.city,
-    //     area: self.data.area
-    //   },
-    //   success(res) {
-    //     console.log(res)
-
-    //   },
-    //   fail(err) {
-    //     console.log(err)
-    //   }
-    // })
-
+  
     setTimeout(function () {
       wx.navigateTo({
         url: '/pages/birth/birth?userId=' + self.data.userId + "&gender=" + self.data.gender + "&province=" + self.data.province + "&city=" + self.data.city + "&area=" + self.data.area,

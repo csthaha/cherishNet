@@ -27,29 +27,6 @@ Page({
       money: e.currentTarget.dataset.money
     })
     console.log(self.data.money)
-    // wx.cloud.callFunction({
-    //   name: 'message',
-    //   data: {
-    //     gender: self.data.gender,
-    //     province: self.data.province,
-    //     city: self.data.city,
-    //     area: self.data.area,
-    //     year: self.data.year,
-    //     month:self.data.month,
-    //     day:self.data.day,
-    //     stature: self.data.status,
-    //     education:self.data.edu,
-    //     marry:self.data.marry,
-    //     money: self.data.money
-    //   },
-    //   success(res) {
-    //     console.log(res)
-
-    //   },
-    //   fail(err) {
-    //     console.log(err)
-    //   }  
-    // })
     wx.navigateTo({
       url: '/pages/loginUp/loginUp?userId=' + self.data.userId + "&gender=" + self.data.gender + "&province=" + self.data.province + "&city=" + self.data.city + "&area=" + self.data.area + "&year=" + self.data.year + "&month=" + self.data.month + "&day=" + self.data.day + "&status=" + self.data.status + "&edu=" + self.data.edu + "&marry=" + self.data.marry +"&money=" + self.data.money,
     })

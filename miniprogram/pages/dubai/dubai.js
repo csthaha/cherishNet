@@ -55,7 +55,7 @@ Page({
     
   },
   
-  onShow:function(){
+  onShow:function(){ 
     const self = this
     const db = wx.cloud.database()
     db.collection('dubai').get({
@@ -83,20 +83,6 @@ Page({
         img:'dianzan1.png'
       })
     }
-    // const db = wx.cloud.database()
-    // db.collection('dubai').get({
-    //   success(res){
-    //     console.log(res.data)
-    //     for(let i =0; i < res.data.length; i++){
-    //       if(i == e.currentTarget.dataset.id){
-    //         console.log('---');
-    //         self.setData({
-    //           img:'dianzan1.png'
-    //         })
-    //       }
-    //     }
-    //   }
-    // })
   },
   
 })

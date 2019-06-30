@@ -49,21 +49,6 @@ Page({
     wx.showLoading({
       title: '加载中',
     })
-    // wx.cloud.callFunction({
-    //   name: 'birth',
-    //   data: {
-    //     year: self.data.year,
-    //     month: self.data.month,
-    //     day: self.data.day
-    //   },
-    //   success(res) {
-    //     console.log(res)
-
-    //   },
-    //   fail(err) {
-    //     console.log(err)
-    //   }
-    // })
     setTimeout(function() {
       wx.navigateTo({
         url: '/pages/stature/stature?userId=' + self.data.userId + "&gender=" + self.data.gender + "&province=" + self.data.province + "&city=" + self.data.city + "&area=" + self.data.area + "&year=" + self.data.year + "&month=" + self.data.month + "&day=" + self.data.day,

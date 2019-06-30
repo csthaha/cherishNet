@@ -1,2 +1,41 @@
-<!--miniprogram/pages/xinxi/xinxi.wxml-->
-<text>miniprogram/pages/xinxi/xinxi.wxml</text>
+
+
+<view  wx:for="{{msg}}">
+  <view class='main'>
+    <image mode='aspefit' class='pic' src='{{avatarUrl}}'></image>
+    <view class='name'>{{nickName}}</view>
+    <view class='msg'>{{item.message}}</view>
+  </view>
+</view>
+
+<view>
+  <view class='main main_right'>
+    <image mode='aspefit' class='pic' src='{{avatarUrl}}'></image>
+    <view class='name'>{{nickName}}</view>
+  </view>
+</view>
+
+
+
+
+<!-- 聊天输入 -->
+
+<view class="message">
+
+  <form bindreset="cleanInput" class="sendMessage">
+
+    <input type="text" placeholder="请输入聊天内容.." value="{{massage}}" bindinput='bindChange'></input>
+
+    <view class="add" bindtap='increase'>+</view>
+
+    <button type="primary" bindtap='send' formType="reset" size="small" button-hover="blue">发送</button>
+
+  </form>
+
+  <view class='increased {{aniStyle?"slideup":"slidedown"}}' wx:if="{{increase}}">
+
+    <view class="image" bindtap='chooseImage'>相册 </view>
+
+  </view>
+
+</view>

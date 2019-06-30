@@ -1,39 +1,3 @@
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>昵称</view>
-  <view style='padding:0 30rpx;'>{{nc}} ></view>
-</view>
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>性别</view>
-  <view style='padding:0 30rpx;'>{{sex}} ></view>
-</view>
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>生日</view>
-  <view style='padding:0 30rpx;'>{{birth}} ></view>
-</view>
-
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>身高</view>
-  <view style='padding:0 30rpx;'>{{height}} ></view>
-</view>
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>月收入</view>
-  <view style='padding:0 30rpx;'>{{money}} ></view>
-</view>
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>工作地区</view>
-  <view style='padding:0 30rpx;'>{{where}} ></view>
-</view>
-
-
-<view class="flex" bindtap='choose' data-id=''>
-  <view style='padding:0 20rpx;'>学历</view>
-  <view style='padding:0 30rpx;'>{{xl}} ></view>
-</view>
 
 <view class="flex" bindtap='choose' data-id=''>
   <view style='padding:0 20rpx;'>婚姻状况</view>
@@ -89,5 +53,5 @@
 </view>
 
 <view class='btnf'>
-  <button class='btn'>保存</button>
+  <button class='btn' bindtap='save'>保存</button>
 </view>

@@ -5,7 +5,7 @@
     <view style="margin-left:auto; display:flex">
       <view bindtap='open' style="margin: auto; background-color:green; border-radius:5rpx; padding:5rpx 10rpx; color:#fff;">开通会员</view>
     </view>
-  </view>
+  </view> 
   <view class="page__bd">
     <view class="weui-cells">
       <view class="weui-cell">

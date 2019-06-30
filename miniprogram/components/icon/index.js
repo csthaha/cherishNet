@@ -4,17 +4,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    type:{
-      type:String,
-      value:''
+    type: {
+      type: String,
+      value: ''
     },
-    color:{
-      type:String,
-      value:'#6600FF'
+    color: {
+      type: String,
+      value: '#eee'
     },
-    size:{
-      type:Number,
-      value:45
+    size: {
+      type: Number,
+      value: 45
     }
   },
 

@@ -1,1 +1,119 @@
-/* miniprogram/pages/xinxi/xinxi.wxss */
+
+.main{
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  
+}
+.main_right{
+  flex-direction: row-reverse
+}
+.main .pic{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.main .msg{
+  margin-left: 20rpx;
+  border: 1rpx solid #57bd03;
+  background-color: #56bd03;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+
+/* 信息输入区域 */
+
+.message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.sendMessage {
+  display: block;
+  height: 80rpx;
+  padding: 10rpx 10rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  /* z-index: -1; */
+}
+
+.sendMessage input {
+  float: left;
+  width: 66%;
+  height: 100%;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding: 0 10rpx;
+  font-size: 35rpx;
+  color: #666;
+}
+
+.sendMessage view {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 60rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #993399;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  margin-left: 10rpx;
+}
+
+.sendMessage button {
+  float: right;
+  font-size: 35rpx;
+}
+
+.increased {
+  width: 100%;
+  /* height: 150rpx; */
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+}
+
+.increased .image {
+  width: 100rpx;
+  height: 100rpx;
+  border: 3rpx solid #ccc;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 35rpx;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.slidedown {
+  animation: slidedown 0.5s linear;
+}
+
+.slideup {
+  animation: slideup 0.5s linear;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

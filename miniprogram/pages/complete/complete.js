@@ -21,30 +21,7 @@ Page({
     let self = this
 
     console.log(e)
-    // wx.cloud.callFunction({
-    //   name: 'message',
-    //   data: {
-    //     gender: self.data.gender
-    //   },
 
-    //   success(res) {
-    //     console.log(res)
-    //     console.log(res.result._id)
-    //     self.setData({
-    //       userId:res.result._id
-    //     })
-    //     setTimeout(function() {
-    //       wx.navigateTo({
-    //         url: '/pages/where/where?userId=' + self.data.userId + "&gender=" + self.data.gender,
-    //       })
-    //       wx.hideLoading()
-    //     }, 1000)
-    //   },
-    //   fail(err) {
-    //     console.log(err)
-    //   }
-
-    // })
     setTimeout(function() {
       wx.navigateTo({
         url: '/pages/where/where?userId=' + self.data.userId + "&gender=" + self.data.gender,

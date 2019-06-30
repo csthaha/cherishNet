@@ -2,10 +2,10 @@
 .container{
     width: 100%;
     height: 100%;
-    /* background-image: url(../../images/index.jpg) */
+
 }
 .main{
-    /* background-color: red; */
+
     height: 80px;
     width: 100%;
     position: absolute;

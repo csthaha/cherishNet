@@ -1,4 +1,4 @@
-/* miniprogram/pages/loginUp/loginUp.wxss */
+ /* miniprogram/pages/loginUp/loginUp.wxss */
 .phone,.lock{
     display: flex;
     margin-left: 30rpx;

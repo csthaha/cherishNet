@@ -32,7 +32,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -100,6 +100,13 @@
 					"id": -1,
 					"name": "loginIn",
 					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "xinxi",
+					"pathName": "pages/xinxi/xinxi",
 					"scene": null
 				}
 			]

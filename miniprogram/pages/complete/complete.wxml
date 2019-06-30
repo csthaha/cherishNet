@@ -1,6 +1,6 @@
 <!--miniprogram/pages/complete/complete.wxml-->
 <view class='container'>
-  <view class='main'>
+  <view class='main'> 
     <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=772433638,4033781311&fm=27&gp=0.jpg' class='pic1'></image>
     <text class='title title1'>完善资料</text>
     <text class='title title2'>为你匹配最合适的人</text>

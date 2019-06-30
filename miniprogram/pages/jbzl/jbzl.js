@@ -14,17 +14,17 @@ Page({
     xz: '请选择',
     drink: '请选择',
     cigerate: '请选择',
-    tx:'请选择',
-    weight:'请选择',
-    tz:'请选择',
+    tx: '请选择',
+    weight: '请选择',
+    tz: '请选择',
     columns: '',
     columns1: ['请选择', '认同闪婚', '一年内', '两年内', '三年内', '时机成熟就结婚'],
     columns2: '',
     columns3: ['请选择', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)', '牧羊座(03.21-04.20)'],
     columns4: ['请选择', '不喝酒', '稍微喝一点酒', '酒喝的很多', '社交场合会和'],
     columns5: ['请选择', '不吸烟', '稍微抽一点', '烟抽的很多', '社交场合会抽烟'],
-    columns6:['请选择','保密','一般','瘦长','苗条','高大美丽','丰满','富线条美'],
-    columns7:'请选择'
+    columns6: ['请选择', '保密', '一般', '瘦长', '苗条', '高大美丽', '丰满', '富线条美'],
+    columns7: '请选择'
   },
 
 
@@ -80,8 +80,7 @@ Page({
   },
   onConfirm(event) {
     const self = this
-    // const { picker, value, index } = event.detail;
-    // Toast(`当前值：${value}, 当前索引：${index}`);
+
     console.log(event.detail.value)
     if (self.data.id == 1) {
       self.setData({
@@ -128,6 +127,18 @@ Page({
 
 
   },
+  save() {
+    // console.log('已保存')
+    wx.showToast({
+      title: '已保存',
+      icon: 'success'
+    })
+    setTimeout(() => {
+      wx.switchTab({
+        url: '../me/me',
+      })
+    },2000)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -135,7 +146,7 @@ Page({
     console.log(mz)
     this.setData({
       columns2: mz,
-      columns7:tz
+      columns7: tz
     })
     console.log(this.data.columns2)
   },

@@ -12,7 +12,7 @@
       <view class='mind'>我正在寻找能给带给我快乐的那个人哈哈哈哈哈</view>
     </view>
   </view>
-
+ 
   <view class='main' wx:for="{{message}}">
     <image class='pic' src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2364321716,3202099899&fm=27&gp=0.jpg' mode="aspectFit"></image>
     <view class='msg'>

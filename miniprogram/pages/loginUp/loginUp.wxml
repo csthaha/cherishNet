@@ -2,10 +2,10 @@
 <view class="phone">
     <image src="../../images/phone2.png" mode='aspectFit' />
     <input bindinput='getPhone' placeholder="请输入手机号" />
-</view>
+</view> 
 <view class="lock">
     <image src="../../images/lock.png" mode='aspectFit' />
-    <input bindinput='getCode' placeholder="设置登录密码(6-20位)" />
+    <input password='true' bindinput='getCode' placeholder="设置登录密码(6-20位)" />
 </view>
 <button class="btn" bindtap='loginUp'>确定</button>
 <view style="text-align:center; margin-top:20rpx;">

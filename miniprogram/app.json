@@ -20,7 +20,8 @@
     "pages/xinxi/xinxi",
     "pages/jbzl/jbzl",
     "pages/camera/camera",
-    "pages/dubai/dubai"
+    "pages/dubai/dubai",
+    "pages/shouquan /shouquan"
   ],
   "window": {
     "backgroundColor": "#993399",
